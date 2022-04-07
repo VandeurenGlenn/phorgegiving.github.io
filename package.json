@@ -1,0 +1,22 @@
+{
+  "name": "phorgegiving-guide",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phorgegiving/phorgegiving.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/phorgegiving/phorgegiving.github.io/issues"
+  },
+  "homepage": "https://github.com/phorgegiving/phorgegiving.github.io#readme",
+  "devDependencies": {
+    "rollup": "^2.70.1"
+  }
+}
