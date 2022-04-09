@@ -10,32 +10,40 @@ export default customElements.define('footer-element', class FooterElement exten
     <style>
       :host {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        width: 100%;
+        font-size: 14px;
+        padding: 8px 16px;
+        box-sizing: border-box;
+      }
+
+      .footer-right {
+        width: 230px;
+      }
+
+      a {
+        text-decoration: none;
       }
     </style>
+    <flex-row>
+      <flex-row>
 
-    <flex-column>
+        <p>Phorgegiving &copy; 2022. All rights reserved.</p>
+        <p style="padding-left: 8px;">beta 1.2.2 this website may have some known bugs.</p>
+      </flex-row>
 
-      <p class="footer-links">
-        <a class="link-1" href="../../index.html">Home</a>
-        <a href="https:/artonline.site">About</a>
-        <a href="#">Contact</a>
-      </p>
-      <p class="thanks">special thanks to <br> BHero#9746 <br> Iondependent#5156</p>
-      <p>Phorgegiving &copy; 2022. All rights reserved</p>
-      <p class="up">beta 1.2.2 this website may have some known bugs.</p>
-    </flex-column>
+      <flex-one></flex-one>
 
-    <flex-one></flex-one>
+      <flex-row class="footer-right">
 
-    <flex-column class="footer-right">
-
-      <a href="#"><i class="fa "><img src="img/telegram.png" class="telegram"></i></a>
-      <a href="https://discord.gg/ntAXPmEW2S"><i class="fa "></i>
-      <img src="img/discord.png" class="telegram"></a>
-    </flex-column>
-
-
+        <a href="#"><i class="fa "><img src="img/telegram.png" class="telegram"></i></a>
+        <a href="https://discord.gg/ntAXPmEW2S"><i class="fa "></i>
+        <img src="img/discord.png" class="telegram"></a>
+      </flex-row>
+    </flex-row>
+    <flex-row>
+      made with love <a style="padding-left: 6px;" href="#!/contributers">by</a>
+    </flex-row>
     `
   }
 })
