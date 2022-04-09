@@ -4,6 +4,7 @@ export default customElements.define('guide-page', class GuidePage extends HTMLE
     this.attachShadow({mode: 'open'})
     this.shadowRoot.innerHTML = this.template
     this.onselect = this.onselect.bind(this)
+    this.onselect({detail: 'platform'})
   }
 
   connectedCallback() {
